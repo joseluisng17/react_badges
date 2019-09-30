@@ -1,0 +1,61 @@
+ -------------- Creamos un proyecto en REACT ----------------
+
+	npx create-react-app blog_platzi
+
+ ------------- Para manejar las rutas --------------------------
+
+	npm install react-router-dom
+
+
+------------ Para trabajar con REDUX ---------------
+
+	npm install redux react-redux
+
+--------- Redux thunk ---------------
+
+	npm install redux-thunk
+
+
+--------  SI DESCARGAMOS UN PROYECTO DE GITHUB NO TENDREA LA CARPETA NODE_MODULES Y HAY QUE
+--------  INSTALAR WEBPACK PARA DESCARGAR LA CARPETA PARA USAMOS LOS SIGUIENTES COMANDOS ---------------------
+
+
+--------COMANDO PARA AGREGAR WEB PACK EN OTRA DEPEDENCIA---------
+	//web pack nos ayuda a mandar todo nuestro archivos de react con vertido a nuestra carpeta public en JS
+
+	npm i webpack -D
+
+--------COMANDO PARA INSTALAR WEB PACK CLI--------------
+
+	npm i webpack-cli
+
+-------Correr web pack para que nos transforme nuestro ReactJs en un bundle.js en la carpeta public----------
+	// agregamos en nuestro archivo package.json
+	"webpack": "webpack --mode development"
+
+	//corremos el siguiente comando 
+	npm run webpack
+
+------- Instalamos React y reat para e navedaor-----------------
+
+	npm install react react-dom -D
+
+
+------- Instalamos Babel para los Jsx y más herramientas de babel para traducir codigo ract-------------
+
+	npm install babel-core babel-loader babel-preset-react babel-preset-env -D
+
+     ---para los que estan empezando ahora el tutorial... Deben instalar Babel 7 y cambio la forma de los presets,  deben instalar: 
+
+     ---Para el core: 
+	npm install --save-dev @babel/core 
+
+     ---Para dos presets: 
+	npm i @babel/preset-react -D 
+	npm i @babel/preset-env -D
+
+     ---y los presets en .babelrc deben quedar asi: 
+
+	"@babel/preset-env","@babel/preset-react" 
+	
+     ---El loader es el único que queda igual.?
